@@ -1,22 +1,35 @@
 {
-	"background": {
-		"scripts": ["background.js"]
-	},
-	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
-	"browser_action": {
-		"default_popup": "popup.html"
-	},
-	"description": "Bypass News Paywalls",
-	"icons": {
-		"128": "128.png"
-	},
-	"manifest_version": 2,
-	"name": "Bypass Paywalls",
-	"short_name": "Bypass Paywalls",
-	"options_ui": {
-		"chrome_style": true,
-		"page": "options.html"
-	},
-    "permissions": [ "cookies", "<all_urls>", "storage", "webRequest", "webRequestBlocking"],
-	"version": "1.0.1"
+  "background": {
+    "scripts": [
+      "common.js",
+      "sites.js",
+      "background.js"
+    ]
+  },
+  "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "128.png"
+    }
+  },
+  "description": "Bypass Paywalls",
+  "homepage_url": "https://github.com/Adamkadaban/NewsPaywallBypass",
+  "icons": {
+    "128": "128.png"
+  },
+  "manifest_version": 2,
+  "name": "Open News", 
+  "options_ui": {
+    "chrome_style": true,
+    "page": "options.html"
+  },
+  "permissions": [
+    "cookies",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "version": "1.0.5"
 }

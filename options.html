@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bypass Paywalls Options</title>
+  <meta charset="utf-8">
+  <title>Paywall Options</title>
   <style>
     #bypass_sites label {
       display: block;
@@ -14,8 +15,7 @@
 </head>
 <body>
   <div>
-    Selected sites will have their cookies cleared and referer set to Google. You should
-    uncheck sites you have an account with or else you will be logged out at every visit.
+    Only select the websites that you do not already have access to. If you have an account (subscription), uncheck the website in order to ensure that you stay logged in. Otherwise, this extension will log you out
   </div>
   <br/>
   <div id='bypass_sites'>
@@ -31,8 +31,9 @@
     <button id="select-all">Select all</button>
     <button id="select-none">Select none</button>
   </span>
+  <br/><br/>
+  <script src="common.js"></script>
+  <script src="sites.js"></script>
   <script src="options.js"></script>
-<br>
 </body>
-<br>
 </html>
